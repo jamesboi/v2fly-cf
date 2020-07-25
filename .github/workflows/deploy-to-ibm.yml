@@ -53,7 +53,8 @@ jobs:
         - name: v2ws
           memory: 256M
           disk_quota: 128M
-          route: chltest2.us-south.cf.appdomain.cloud
+          routes: 
+          - route: chltest2.us-south.cf.appdomain.cloud            
           command: ./v2ray
           buildpacks:
           - binary_buildpack
