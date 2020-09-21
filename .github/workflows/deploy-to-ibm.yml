@@ -50,8 +50,8 @@ jobs:
         cat > manifest-ibm.yml << EOF
         ---
         applications:
-        - name: v2ws
-          memory: 256M
+        - name: zzws
+          memory: 128M
           disk_quota: 128M
           routes: 
           - route: chltest2.us-south.cf.appdomain.cloud            
@@ -68,5 +68,5 @@ jobs:
         cf_org: ${{ secrets.CF_ORG_IBM }}
         cf_space: ${{ secrets.CF_SPACE_IBM }}
         command: >
-          push v2ws -f manifest-ibm.yml
+          push zzws -f manifest-ibm.yml
           
